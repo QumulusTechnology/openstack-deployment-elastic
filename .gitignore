@@ -1,0 +1,8 @@
+terraform.tfstate*
+terraform.tfvars
+.terraform
+.terraform*
+bootstrap-secrets.local.json
+inventory
+hosts
+ece.yml

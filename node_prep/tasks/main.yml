@@ -1,0 +1,14 @@
+---
+# tasks file for node_prep
+
+- name: Unmount /mnt
+  ansible.posix.mount:
+    path: /mnt
+    state: absent
+  notify:
+    - reboot server
+
+- name: Flush handlers
+  meta: flush_handlers
+
+

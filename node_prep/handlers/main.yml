@@ -1,0 +1,7 @@
+---
+# handlers file for node_prep
+
+- name: reboot server
+  reboot:
+    reboot_timeout: 60
+  
